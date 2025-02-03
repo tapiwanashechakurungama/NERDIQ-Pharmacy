@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faFacebookF,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-10">
@@ -13,7 +18,6 @@ export const Footer = () => {
             </p>
           </div>
 
- 
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
             <Link to="/" className="text-white hover:text-blue-300 mb-1">
@@ -28,10 +32,7 @@ export const Footer = () => {
             >
               Products
             </Link>
-            <Link
-              to="/contact"
-              className="text-white hover:text-blue-300 mb-1"
-            >
+            <Link to="/contact" className="text-white hover:text-blue-300 mb-1">
               Contact
             </Link>
           </div>
@@ -39,28 +40,19 @@ export const Footer = () => {
           {/* Contact Information */}
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p className="text-white">123 Pharmacy St.</p>
-            <p className="text-white">City, State, 12345</p>
-            <p className="text-white">Phone: (123) 456-7890</p>
-            <p className="text-white">Email: info@nerdiqpharmacy.com</p>
+            <p className="text-white">Midlands State university</p>
+            <p className="text-white">Main Campus, Gweru,</p>
+            <p className="text-white">Phone: +263 771 383 631</p>
+            <p className="text-white">Email: info@nerdiq.co.zw</p>
           </div>
 
           {/* Social Media Links */}
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-blue-300">
-                <i className="fab fa-facebook-f"></i> {/* Font Awesome icon */}
-              </a>
-              <a href="#" className="text-white hover:text-blue-300">
-                <i className="fab fa-twitter"></i> {/* Font Awesome icon */}
-              </a>
-              <a href="#" className="text-white hover:text-blue-300">
-                <i className="fab fa-instagram"></i> {/* Font Awesome icon */}
-              </a>
-              <a href="#" className="text-white hover:text-blue-300">
-                <i className="fab fa-linkedin-in"></i> {/* Font Awesome icon */}
-              </a>
+            <div className="flex space-x-5">
+                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faInstagram} />
             </div>
           </div>
         </div>
