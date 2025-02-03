@@ -6,7 +6,6 @@ export const Footer = () => {
     <footer className="bg-gray-800 text-white py-10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between">
-          {/* Logo Section */}
           <div className="mb-6 md:mb-0">
             <h1 className="text-3xl font-bold">NerdIQ</h1>
             <p className="mt-2 text-white">
@@ -14,7 +13,7 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+ 
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
             <Link to="/" className="text-white hover:text-blue-300 mb-1">

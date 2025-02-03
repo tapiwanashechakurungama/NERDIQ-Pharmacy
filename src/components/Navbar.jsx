@@ -16,7 +16,6 @@ export function NavbarComponent() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Handle scroll behavior
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
@@ -36,7 +35,6 @@ export function NavbarComponent() {
     >
       <div className="py-4 mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <Link to="/">
             <div className="flex-shrink-0">
               <img
@@ -46,8 +44,6 @@ export function NavbarComponent() {
               />
             </div>
           </Link>
-
-          {/* Desktop Navigation */}
           <div className="hidden md:flex md:space-x-8">
             <Link
               to="/"

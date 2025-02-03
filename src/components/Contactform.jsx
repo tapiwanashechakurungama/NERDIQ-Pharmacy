@@ -59,7 +59,7 @@ export const ContactUsSection = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps Location" // Added title for accessibility
+            title="Google Maps Location" 
           ></iframe>
         </div>
       </div>
