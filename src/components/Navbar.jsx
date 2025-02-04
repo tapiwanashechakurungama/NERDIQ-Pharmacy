@@ -32,7 +32,7 @@ export function NavbarComponent() {
   //https://nerdiq.co.zw/images/Nerd%20IQ.png
   return (
     <nav
-      className={`bg-[#f6f6f6] md:fixed  sticky shadow-md w-full top-0 z-50 transition-transform duration-300 ${
+      className={`bg-white md:fixed  sticky shadow-md w-full top-0 z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
