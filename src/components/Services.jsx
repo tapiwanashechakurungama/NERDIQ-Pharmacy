@@ -1,34 +1,35 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 
-const services = [
-  {
-    title: "Prescription Services",
-    description:
-      "We provide reliable and accurate prescription services tailored to your health needs.",
-    icon: "💊",
-  },
-  {
-    title: "Health Consultations",
-    description:
-      "Get personalized health advice from our experienced pharmacists.",
-    icon: "🩺",
-  },
-  {
-    title: "Medication Delivery",
-    description:
-      "Enjoy the convenience of having your medications delivered right to your door.",
-    icon: "🚚",
-  },
-  {
-    title: "Immunizations",
-    description:
-      "Stay healthy with our immunization services, including flu shots and more.",
-    icon: "💉",
-  },
-];
+
 
 export const ServicesSection = () => {
+  const services = [
+    {
+      title: "Prescription Services",
+      description:
+        "We provide reliable and accurate prescription services tailored to your health needs.",
+      icon: "💊",
+    },
+    {
+      title: "Health Consultations",
+      description:
+        "Get personalized health advice from our experienced pharmacists.",
+      icon: "🩺",
+    },
+    {
+      title: "Medication Delivery",
+      description:
+        "Enjoy the convenience of having your medications delivered right to your door.",
+      icon: "🚚",
+    },
+    {
+      title: "Immunizations",
+      description:
+        "Stay healthy with our immunization services, including flu shots and more.",
+      icon: "💉",
+    },
+  ];
   return (
     <section className="bg-[#e9f5ff] py-16">
       <div className="container mx-auto text-center">

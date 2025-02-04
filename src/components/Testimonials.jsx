@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { motion } from "framer-motion";
 import { useSwipeable } from "react-swipeable";
 
@@ -54,7 +54,7 @@ export const TestimonialsSection = () => {
         muted
       >
         <source
-          src="https://videocdn.cdnpk.net/videos/04e2d01f-1832-4f94-8ca2-c81f43fbe751/horizontal/previews/watermarked/large.mp4"
+          src="https://videocdn.cdnpk.net/videos/437b8e0f-4381-56d9-8e5a-c6b1f86522cd/horizontal/previews/watermarked/large.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

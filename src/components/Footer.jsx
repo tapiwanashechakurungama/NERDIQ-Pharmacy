@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,6 +31,12 @@ export const Footer = () => {
             >
               Products
             </Link>
+            <Link
+              to="/prescriptions"
+              className="text-white hover:text-blue-300 mb-1"
+            >
+              Prescriptions
+            </Link>
             <Link to="/contact" className="text-white hover:text-blue-300 mb-1">
               Contact
             </Link>
@@ -50,16 +55,33 @@ export const Footer = () => {
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-5">
+              <a
+                className="text-white hover:text-gray-600"
+                href="https://twitter.com/nerdiq"
+              >
                 <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a
+                className="text-white hover:text-gray-600"
+                href="https://facebook.com/nerdiq"
+              >
+                {" "}
                 <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+              <a
+                className="text-white hover:text-gray-600"
+                href="https://instagram.com/nerdiq"
+              >
+                {" "}
                 <FontAwesomeIcon icon={faInstagram} />
+              </a>
             </div>
           </div>
         </div>
 
         {/* Copyright Section */}
         <div className="border-t border-gray-700 mt-6 pt-4 text-center text-white">
-          &copy; {new Date().getFullYear()} Nerdiq Pharmacy. All rights
+          &copy; {new Date().getFullYear()} NERDIQ Pharmacy. All rights
           reserved.
         </div>
       </div>

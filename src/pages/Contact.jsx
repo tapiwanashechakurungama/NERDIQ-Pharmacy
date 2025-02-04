@@ -1,8 +1,13 @@
+import { ContactBanner } from "../components/ContactBanner"
+import { ContactUsSection } from "../components/Contactform"
 
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <ContactBanner/>
+      <ContactUsSection/>
+    </div>
   )
 }
 

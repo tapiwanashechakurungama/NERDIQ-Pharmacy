@@ -1,6 +1,17 @@
-import React from "react";
+import { useState } from "react";
 
 export const ContactUsSection = () => {
+  const [successMessage, setuccessMessage] = useState();
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [message,setMessage] = useState("")
+  const submitform = (e) => {
+    e.preventDefault();
+    setuccessMessage("Well received we will get back to you")
+    setEmail("")
+    setMessage("")
+    setName("")
+  };
   return (
     <section className="relative bg-gray-100 py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -11,12 +22,21 @@ export const ContactUsSection = () => {
             We would love to hear from you! Please fill out the form below.
           </p>
           {/* Contact Form */}
-          <form className="bg-white p-8 rounded-lg shadow-lg">
+          <form
+            className="bg-white p-8 rounded-lg shadow-lg"
+            onSubmit={submitform}
+          >
+            <div className="Message-feebcakc">
+              <p className="p text-blue-500">{successMessage}</p>
+            </div>
             <div className="mb-4">
               <label className="block text-gray-700 mb-2">Name</label>
               <input
                 type="text"
                 name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Tapiwanashe Chakurungama"
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
               />
@@ -26,6 +46,9 @@ export const ContactUsSection = () => {
               <input
                 type="email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="info@nerdiq.co.zw"
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
               />
@@ -33,15 +56,18 @@ export const ContactUsSection = () => {
             <div className="mb-4">
               <label className="block text-gray-700 mb-2">Message</label>
               <textarea
-                name="message"
+                className="w-full p-3 border border-gray-300 rounded-lg
+              focus:outline-none focus:ring focus:ring-blue-500"
+                name=""
                 required
-                rows="4"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
-              />
+                value={message}
+                onChange={(e)=> setMessage(e.target.value)}
+                id=""
+              ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+              className="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
             >
               Send Message
             </button>
@@ -59,7 +85,7 @@ export const ContactUsSection = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Google Maps Location" 
+            title="Google Maps Location"
           ></iframe>
         </div>
       </div>
