@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const PrescriptionsPage = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -10,7 +11,7 @@ export const PrescriptionsPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ name, phone, email, file });
-    alert("Prescription request submitted!");
+     toast.success("Request successfully made");
     setName("");
     setPhone("");
     setEmail("");
@@ -136,6 +137,7 @@ export const PrescriptionsPage = () => {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

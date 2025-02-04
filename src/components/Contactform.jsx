@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify"; // Importing necessary components
+import "react-toastify/dist/ReactToastify.css";
 export const ContactUsSection = () => {
   const [successMessage, setuccessMessage] = useState();
   const [name,setName] = useState("")
@@ -8,6 +9,7 @@ export const ContactUsSection = () => {
   const submitform = (e) => {
     e.preventDefault();
     setuccessMessage("Well received we will get back to you")
+    toast.success("Well received, thank you");
     setEmail("")
     setMessage("")
     setName("")
@@ -61,7 +63,7 @@ export const ContactUsSection = () => {
                 name=""
                 required
                 value={message}
-                onChange={(e)=> setMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
                 id=""
               ></textarea>
             </div>
@@ -89,6 +91,7 @@ export const ContactUsSection = () => {
           ></iframe>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
