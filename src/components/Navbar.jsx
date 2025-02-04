@@ -41,7 +41,7 @@ export function NavbarComponent() {
           <Link to="/">
             <div className="flex-shrink-0">
               <img
-                src="../../public/logo.jpg"
+                src="https://nerdiq.co.zw/images/Nerd%20IQ.png"
                 alt="NerdIQ Logo"
                 className="h-20 w-auto"
               />
