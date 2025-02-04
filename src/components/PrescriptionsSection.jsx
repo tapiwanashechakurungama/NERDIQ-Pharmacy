@@ -114,8 +114,6 @@ export const PrescriptionsPage = () => {
             </motion.button>
           </motion.form>
         </div>
-
-        {/* Right Side - Informational Content */}
         <div className="md:w-1/2 bg-blue-50 p-8 flex flex-col justify-center">
           <h3 className="text-xl font-semibold text-gray-800 mb-4">
             Why Upload Your Prescription?

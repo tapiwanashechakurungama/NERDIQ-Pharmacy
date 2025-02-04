@@ -4,6 +4,7 @@ import {
   faTwitter,
   faFacebookF,
   faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 export const Footer = () => {
   return (
@@ -57,20 +58,20 @@ export const Footer = () => {
             <div className="flex space-x-5">
               <a
                 className="text-white hover:text-gray-600"
-                href="https://twitter.com/nerdiq"
+                href="https://www.linkedin.com/company/nerd-iq/"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 className="text-white hover:text-gray-600"
-                href="https://facebook.com/nerdiq"
+                href="https://www.facebook.com/profile.php?id=61556964325466"
               >
                 {" "}
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a
                 className="text-white hover:text-gray-600"
-                href="https://instagram.com/nerdiq"
+                href="https://www.instagram.com/nerdiq_official/"
               >
                 {" "}
                 <FontAwesomeIcon icon={faInstagram} />
