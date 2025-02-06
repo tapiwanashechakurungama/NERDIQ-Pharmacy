@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faTwitter,
   faFacebookF,
   faInstagram,
   faLinkedin,
@@ -46,7 +45,7 @@ export const Footer = () => {
           {/* Contact Information */}
           <div className="flex flex-col mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p className="text-white">Midlands State university</p>
+            <p className="text-white">Midlands State University</p>
             <p className="text-white">Main Campus, Gweru,</p>
             <p className="text-white">Phone: +263 771 383 631</p>
             <p className="text-white">Email: info@nerdiq.co.zw</p>
@@ -79,11 +78,14 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Copyright Section */}
-        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-white">
-          &copy; {new Date().getFullYear()} NERDIQ Pharmacy. All rights
-          reserved.
+        <div className="border-t md:flex border-gray-700 mt-6 pt-4 text-center justify-between text-white">
+          <p>
+            &copy; {new Date().getFullYear()} NERDIQ Pharmacy. All rights
+            reserved.
+          </p>
+          <a  href="https://nerdiq.co.zw" className="opacity-[0.6] text-gray-400 ">
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>

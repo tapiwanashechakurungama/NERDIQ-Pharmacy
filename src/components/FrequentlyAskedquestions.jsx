@@ -75,7 +75,7 @@ export const FAQSection = () => {
                   className="p-6 border-t border-gray-200"
                   initial={{ height: 0 }}
                   animate={{ height: "auto" }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <p className="text-gray-500 font-[600]">{faq.answer}</p>
                 </motion.div>

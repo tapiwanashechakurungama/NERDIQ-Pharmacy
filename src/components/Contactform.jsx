@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify"; // Importing necessary components
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 export const ContactUsSection = () => {
   const [successMessage, setuccessMessage] = useState();
   const [name,setName] = useState("")
@@ -67,12 +68,14 @@ export const ContactUsSection = () => {
                 id=""
               ></textarea>
             </div>
-            <button
+            <motion.button
               type="submit"
-              className="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+              className="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{scale:0.3}}
             >
               Send Message
-            </button>
+            </motion.button>
           </form>
         </div>
 
