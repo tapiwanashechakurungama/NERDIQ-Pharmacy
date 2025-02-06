@@ -150,14 +150,14 @@ export function NavbarComponent() {
               className="text-gray-800 py-2 hover:text-gray-600"
               href="https://facebook.com/nerdiq"
             >
-              {" "}
+              
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a
               className="text-gray-800 py-2 hover:text-gray-600"
               href="https://instagram.com/nerdiq"
             >
-              {" "}
+              
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
