@@ -2,6 +2,8 @@ import  { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ToastContainer, toast } from "react-toastify"; // Importing necessary components
+import "react-toastify/dist/ReactToastify.css";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 export function NavbarComponent() {
   const [openNav, setOpenNav] = useState(false);
@@ -30,6 +32,10 @@ export function NavbarComponent() {
   }, [prevScrollPos]);
   //bg-[#f9f7f7]
   //https://nerdiq.co.zw/images/Nerd%20IQ.png
+
+  const handleCartClick = () =>{
+     toast.warn("Cart features not yet implemented");
+  }
   return (
     <nav
       className={`bg-white md:fixed  sticky shadow-md w-full top-0 z-50 transition-transform duration-300 ${
@@ -79,6 +85,7 @@ export function NavbarComponent() {
               Contact
             </Link>
             <Link
+              onClick={handleCartClick}
               to="/"
               className="text-black no-underline hover:text-blue-500 font-semibold justify-center items-center mt-1"
             >
@@ -150,14 +157,12 @@ export function NavbarComponent() {
               className="text-gray-800 py-2 hover:text-gray-600"
               href="https://facebook.com/nerdiq"
             >
-              
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a
               className="text-gray-800 py-2 hover:text-gray-600"
               href="https://instagram.com/nerdiq"
             >
-              
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
@@ -198,6 +203,7 @@ export function NavbarComponent() {
           </Link>
         </div>
       </div>
+      <ToastContainer />
     </nav>
   );
 }

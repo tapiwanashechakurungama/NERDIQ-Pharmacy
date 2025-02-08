@@ -11,7 +11,7 @@ export const PrescriptionsPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ name, phone, email, file });
-     toast.success("Request successfully made");
+    toast.success("Request successfully made");
     setName("");
     setPhone("");
     setEmail("");
