@@ -13,7 +13,7 @@ export const BannerSliders = () => {
         <div className="relative w-full  bg-black bg-opacity-50">
           <CImage
             className="d-block w-100 h-auto"
-            src="https://img.freepik.com/free-photo/young-african-american-woman-wearing-doctor-uniform-holding-tuning-fork-relaxed-with-serious-expression-face-simple-natural-looking-camera_839833-14811.jpg?t=st=1738578071~exp=1738581671~hmac=98dde21d8f031fa97c82339d31d9044fbb26bb5c74af2ff52ed7c0c81ee883e2&w=1060"
+            src="https://img.freepik.com/free-photo/portrait-woman-working-pharmaceutical-industry_23-2151684893.jpg?t=st=1739266909~exp=1739270509~hmac=9892d46d37ba222a477d181e5d6bb097d9bfbdd75efc335526bd05375d862c02&w=1380"
             alt="slide 1"
           />
           <CCarouselCaption className="absolute inset-0 flex items-center justify-center text-white">
@@ -34,7 +34,7 @@ export const BannerSliders = () => {
         <div className="relative w-full bg-black bg-opacity-60">
           <CImage
             className="d-block w-100 h-auto"
-            src="https://img.freepik.com/free-photo/african-american-woman-pharmacist-standing-with-serious-expression-pharmacy_839833-20088.jpg?t=st=1738578122~exp=1738581722~hmac=c8af4e4330b06e3e65a282c2f8ef6531485b830420d572eb7fd44b1860bff27a&w=1060"
+            src="https://img.freepik.com/free-photo/medical-specialist-consulting-patient-with-disease-while-wearing-face-mask-annual-checkup-visit-young-person-receiving-consultation-from-doctor-healthcare-covid-19-epidemic_482257-38455.jpg?t=st=1739267012~exp=1739270612~hmac=f024b352402fbbe0f59e8881c3ef825ab6335fb26894f8a951bdb9db7797dbee&w=1380"
             alt="slide 2"
           />
           <CCarouselCaption className="absolute inset-0 flex items-center justify-center text-white ">
@@ -55,7 +55,7 @@ export const BannerSliders = () => {
         <div className="relative w-full  bg-black bg-opacity-60">
           <CImage
             className="d-block w-100 h-auto"
-            src="https://img.freepik.com/free-photo/young-woman-pharmacist-pharmacy_1303-25532.jpg?t=st=1738578150~exp=1738581750~hmac=155b4a067ab4ee6ecc3c7f4b4f689146e421a79db3aae2570778e9492708cab9&w=1060"
+            src="https://img.freepik.com/premium-photo/pharmacist-with-tablet_1030879-81067.jpg?w=1380"
             alt="slide 3"
           />
           <CCarouselCaption className="absolute inset-0 flex items-center justify-center text-white">
