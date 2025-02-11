@@ -54,7 +54,7 @@ export const TestimonialsSection = () => {
         muted
       >
         <source
-          src="https://videocdn.cdnpk.net/videos/437b8e0f-4381-56d9-8e5a-c6b1f86522cd/horizontal/previews/watermarked/large.mp4"
+          src="https://videocdn.cdnpk.net/videos/26b1585f-f63b-5e40-b824-14db2c4b6bd7/horizontal/previews/clear/large.mp4?token=exp=1739267882~hmac=a92a7911b2a17bf5dfa2511b7283f3718fb24e4ada9686cd4524ab05b3e823b1"
           type="video/mp4"
         />
         Your browser does not support the video tag.
