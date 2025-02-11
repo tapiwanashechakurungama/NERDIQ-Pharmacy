@@ -38,7 +38,7 @@ export function NavbarComponent() {
   }
   return (
     <nav
-      className={`bg-white md:fixed  sticky shadow-md w-full top-0 z-50 transition-transform duration-300 ${
+      className={`bg-white md:fixed sticky shadow-md w-full top-0 z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
