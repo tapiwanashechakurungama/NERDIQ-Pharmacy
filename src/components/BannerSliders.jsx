@@ -55,7 +55,7 @@ export const BannerSliders = () => {
         <div className="relative w-full  bg-black bg-opacity-60">
           <CImage
             className="d-block w-100 h-auto"
-            src="https://img.freepik.com/premium-photo/pharmacist-with-tablet_1030879-81067.jpg?w=1380"
+            src="https://i.pinimg.com/736x/2e/d9/3e/2ed93e669a5f89b10df01a5e0669e655.jpg"
             alt="slide 3"
           />
           <CCarouselCaption className="absolute inset-0 flex items-center justify-center text-white">
