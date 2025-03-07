@@ -42,10 +42,11 @@ export const PrescriptionsPage = () => {
                 className="block text-left text-gray-700 mb-2"
                 htmlFor="name"
               >
-                Name
+                Full Name
               </label>
               <input
                 type="text"
+                placeholder="eg  : Tapiwanashe Chakurungama"
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -64,6 +65,7 @@ export const PrescriptionsPage = () => {
               <input
                 type="tel"
                 id="phone"
+                placeholder="+263733517788"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 required
@@ -81,6 +83,7 @@ export const PrescriptionsPage = () => {
               <input
                 type="email"
                 id="email"
+                placeholder="info@nerdiq.co.zw"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -98,6 +101,7 @@ export const PrescriptionsPage = () => {
               <input
                 type="file"
                 id="file"
+                placeholder="Nashy prescription"
                 accept=".pdf,.jpg,.jpeg,.png"
                 onChange={(e) => setFile(e.target.files[0])}
                 required

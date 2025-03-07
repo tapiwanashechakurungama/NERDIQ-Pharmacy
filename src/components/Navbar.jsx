@@ -201,6 +201,13 @@ export function NavbarComponent() {
           >
             Contact
           </Link>
+          <Link
+            to="/contact"
+            onClick={() => setOpenNav(false)}
+            className="block text-black no-underline hover:bg-gray-100 hover:text-blue-500 px-3 py-2 rounded-md text-base font-medium"
+          >
+            Register
+          </Link>
         </div>
       </div>
       <ToastContainer />
